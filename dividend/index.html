@@ -30,7 +30,7 @@
 </div>
 <p style="color:var(--text-sub);font-size:.88rem;margin-bottom:1rem;">
   高配当利回り・安定収益銘柄<br>
-  部門スコア65.0点以上をBUY判定 — 本日 <strong>328銘柄</strong>が対象（上位30銘柄を表示）
+  部門スコア65.0点以上をBUY判定 — 本日 <strong>209銘柄</strong>が対象（上位30銘柄を表示）
 </p>
 <div class="dept-filter-bar" style="flex-wrap:wrap;gap:.35rem .4rem;">
   <span style="font-size:.72rem;color:var(--text-sub);align-self:center;">国:</span>
@@ -42,7 +42,7 @@
   <button class="dept-filter-btn" data-grp="cap" id="dft-cap-large" onclick="deptCapFilter('large')">大型株</button>
   <button class="dept-filter-btn" data-grp="cap" id="dft-cap-mid"   onclick="deptCapFilter('mid')">中型株</button>
   <button class="dept-filter-btn" data-grp="cap" id="dft-cap-small" onclick="deptCapFilter('small')">小型株</button>
-  <select class="sector-select" id="dept-sector-sel" onchange="deptSectorFilter()"><option value="">セクター: 全て</option><option value="Communication Services">Communication Services</option><option value="Consumer Cyclical">Consumer Cyclical</option><option value="Consumer Defensive">Consumer Defensive</option><option value="Energy">Energy</option><option value="Financial Services">Financial Services</option><option value="Industrials">Industrials</option><option value="Real Estate">Real Estate</option><option value="Technology">Technology</option></select>
+  <select class="sector-select" id="dept-sector-sel" onchange="deptSectorFilter()"><option value="">セクター: 全て</option><option value="Basic Materials">素材</option><option value="Consumer Cyclical">消費財（景気敏感）</option><option value="Consumer Defensive">消費財（DF）</option><option value="Energy">エネルギー</option><option value="Healthcare">ヘルスケア</option><option value="Industrials">産業</option><option value="Real Estate">不動産</option><option value="Technology">テクノロジー</option></select>
   <button class="detail-toggle-btn" id="dft-detail" onclick="deptToggleDetail()">詳細列 ＋</button>
 </div>
 <div class="dept-table-wrap" id="dept-tbl-wrap">
@@ -53,377 +53,104 @@
     <th>PER</th><th>PBR</th><th>ROE%</th><th>配当%</th><th>1M%</th><th>上値余地</th>
     <th class="col-detail">出来高比</th><th class="col-detail">β</th><th class="col-detail">FCF%</th>
   </tr></thead>
-  <tbody><tr data-jp="1" data-sector="Industrials" data-cap="small">
+  <tbody><tr data-jp="1" data-sector="Technology" data-cap="small">
   <td style="color:var(--text-sub);font-weight:800">#1</td>
   <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/2410.T" target="_blank" rel="noopener"><strong>2410</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">キャリアデザインセンター</td>
-  <td><span class="dept-score-num score-high">100</span> <span class="score-delta dn" style="font-size:.65rem">-9</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">73</td>
-  <td>11.6</td><td>2.88</td><td>26.8%</td><td>10.26%</td>
-  <td><span class="up">+4.8%</span></td>
+  <td><a href="https://finance.yahoo.co.jp/quote/4709.T" target="_blank" rel="noopener"><strong>4709</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">ＩＤホールディングス</td>
+  <td><span class="dept-score-num score-high">95</span> <span class="score-delta up" style="font-size:.65rem">+19</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">74</td>
+  <td>11.9</td><td>2.39</td><td>20.2%</td><td>4.88%</td>
+  <td><span class="up">+13.5%</span></td>
   <td>—</td>
-  <td class="col-detail"><span class="">0.9x</span></td>
-  <td class="col-detail">0.34</td>
-  <td class="col-detail"><span class="up">8.7%</span></td>
-</tr><tr data-jp="1" data-sector="Real Estate" data-cap="small">
-  <td style="color:var(--text-sub);font-weight:800">#2</td>
-  <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/1814.T" target="_blank" rel="noopener"><strong>1814</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">大末建設</td>
-  <td><span class="dept-score-num score-high">100</span> <span class="score-delta dn" style="font-size:.65rem">-2</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">72</td>
-  <td>8.6</td><td>1.29</td><td>15.8%</td><td>5.90%</td>
-  <td><span class="dn">-10.6%</span></td>
-  <td>—</td>
-  <td class="col-detail"><span class="">0.9x</span></td>
-  <td class="col-detail">0.45</td>
-  <td class="col-detail"><span class="up">25.4%</span></td>
-</tr><tr data-jp="1" data-sector="Technology" data-cap="small">
-  <td style="color:var(--text-sub);font-weight:800">#3</td>
-  <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/3393.T" target="_blank" rel="noopener"><strong>3393</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">スターティアホールディングス</td>
-  <td><span class="dept-score-num score-high">100</span> <span class="score-delta dn" style="font-size:.65rem">-5</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">68</td>
-  <td>11.8</td><td>—</td><td>29.2%</td><td>10.65%</td>
-  <td><span class="up">+5.7%</span></td>
-  <td>—</td>
-  <td class="col-detail"><span class="">0.9x</span></td>
-  <td class="col-detail">0.88</td>
-  <td class="col-detail"><span class="up">9.1%</span></td>
-</tr><tr data-jp="1" data-sector="Technology" data-cap="mid">
-  <td style="color:var(--text-sub);font-weight:800">#4</td>
-  <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/9715.T" target="_blank" rel="noopener"><strong>9715</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">トランス・コスモス</td>
-  <td><span class="dept-score-num score-high">100</span> <span class="score-delta dn" style="font-size:.65rem">-7</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">64</td>
-  <td>11.8</td><td>1.12</td><td>10.4%</td><td>7.53%</td>
-  <td><span class="dn">-1.5%</span></td>
-  <td><span class="up">+10.8%</span></td>
-  <td class="col-detail"><span class="">0.9x</span></td>
-  <td class="col-detail">0.17</td>
-  <td class="col-detail"><span class="up">8.9%</span></td>
-</tr><tr data-jp="1" data-sector="Technology" data-cap="small">
-  <td style="color:var(--text-sub);font-weight:800">#5</td>
-  <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/9739.T" target="_blank" rel="noopener"><strong>9739</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">ＮＳＷ</td>
-  <td><span class="dept-score-num score-high">100</span> <span class="score-delta dn" style="font-size:.65rem">-5</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">64</td>
-  <td>10.3</td><td>1.01</td><td>10.1%</td><td>5.07%</td>
-  <td><span class="up">+3.1%</span></td>
-  <td>—</td>
-  <td class="col-detail"><span class="">1.4x</span></td>
-  <td class="col-detail">0.17</td>
-  <td class="col-detail"><span class="up">4.6%</span></td>
-</tr><tr data-jp="1" data-sector="Consumer Defensive" data-cap="small">
-  <td style="color:var(--text-sub);font-weight:800">#6</td>
-  <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/9769.T" target="_blank" rel="noopener"><strong>9769</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">学究社</td>
-  <td><span class="dept-score-num score-high">100</span> <span class="score-delta up" style="font-size:.65rem">+1</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">62</td>
-  <td>14.5</td><td>—</td><td>23.8%</td><td>5.28%</td>
-  <td><span class="up">+7.2%</span></td>
-  <td>—</td>
-  <td class="col-detail"><span class="">0.5x</span></td>
-  <td class="col-detail">0.13</td>
-  <td class="col-detail"><span class="up">8.9%</span></td>
-</tr><tr data-jp="1" data-sector="Industrials" data-cap="small">
-  <td style="color:var(--text-sub);font-weight:800">#7</td>
-  <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/1898.T" target="_blank" rel="noopener"><strong>1898</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">世紀東急工業</td>
-  <td><span class="dept-score-num score-high">100</span> <span class="score-delta dn" style="font-size:.65rem">-8</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">61</td>
-  <td>11.1</td><td>1.17</td><td>10.9%</td><td>5.39%</td>
-  <td><span class="dn">-5.1%</span></td>
-  <td>—</td>
-  <td class="col-detail"><span class="">1.4x</span></td>
-  <td class="col-detail">0.03</td>
-  <td class="col-detail"><span class="up">18.0%</span></td>
-</tr><tr data-jp="1" data-sector="Energy" data-cap="small">
-  <td style="color:var(--text-sub);font-weight:800">#8</td>
-  <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/1518.T" target="_blank" rel="noopener"><strong>1518</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">三井松島ホールディングス</td>
-  <td><span class="dept-score-num score-high">100</span> <span class="score-delta dn" style="font-size:.65rem">-7</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">61</td>
-  <td>9.5</td><td>0.99</td><td>11.1%</td><td>5.24%</td>
-  <td><span class="up">+1.8%</span></td>
-  <td>—</td>
-  <td class="col-detail"><span class="">0.8x</span></td>
-  <td class="col-detail">0.88</td>
-  <td class="col-detail"><span class="up">3.8%</span></td>
-</tr><tr data-jp="1" data-sector="Financial Services" data-cap="small">
-  <td style="color:var(--text-sub);font-weight:800">#9</td>
-  <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/4310.T" target="_blank" rel="noopener"><strong>4310</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">ドリームインキュベータ</td>
-  <td><span class="dept-score-num score-high">100</span> <span class="score-delta dn" style="font-size:.65rem">-8</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">61</td>
-  <td>15.7</td><td>2.16</td><td>12.8%</td><td>9.61%</td>
-  <td><span class="up">+14.1%</span></td>
-  <td>—</td>
-  <td class="col-detail"><span class="">1.0x</span></td>
-  <td class="col-detail">1.10</td>
-  <td class="col-detail"><span class="up">7.5%</span></td>
+  <td class="col-detail"><span class="">0.4x</span></td>
+  <td class="col-detail">0.43</td>
+  <td class="col-detail"><span class="up">7.9%</span></td>
 </tr><tr data-jp="1" data-sector="Industrials" data-cap="mid">
-  <td style="color:var(--text-sub);font-weight:800">#10</td>
+  <td style="color:var(--text-sub);font-weight:800">#2</td>
   <td>🇯🇵</td>
   <td><a href="https://finance.yahoo.co.jp/quote/2181.T" target="_blank" rel="noopener"><strong>2181</strong></a></td>
   <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">パーソルホールディングス</td>
-  <td><span class="dept-score-num score-high">100</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">60</td>
+  <td><span class="dept-score-num score-high">94</span> <span class="score-delta dn" style="font-size:.65rem">-7</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">74</td>
   <td>12.0</td><td>2.31</td><td>20.1%</td><td>5.65%</td>
   <td><span class="dn">-4.2%</span></td>
   <td><span class="up">+33.0%</span></td>
   <td class="col-detail"><span class="up">2.8x</span></td>
   <td class="col-detail">0.56</td>
   <td class="col-detail"><span class="up">11.2%</span></td>
-</tr><tr data-jp="1" data-sector="Industrials" data-cap="small">
-  <td style="color:var(--text-sub);font-weight:800">#11</td>
+</tr><tr data-jp="1" data-sector="Technology" data-cap="small">
+  <td style="color:var(--text-sub);font-weight:800">#3</td>
   <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/7059.T" target="_blank" rel="noopener"><strong>7059</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">コプロ・ホールディングス</td>
-  <td><span class="dept-score-num score-high">100</span> <span class="score-delta dn" style="font-size:.65rem">-1</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">58</td>
-  <td>9.8</td><td>2.84</td><td>31.4%</td><td>6.12%</td>
-  <td><span class="dn">-13.1%</span></td>
+  <td><a href="https://finance.yahoo.co.jp/quote/8150.T" target="_blank" rel="noopener"><strong>8150</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">三信電気</td>
+  <td><span class="dept-score-num score-high">94</span> <span class="score-delta dn" style="font-size:.65rem">-5</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">74</td>
+  <td>6.8</td><td>0.73</td><td>11.4%</td><td>7.28%</td>
+  <td><span class="up">+2.5%</span></td>
   <td>—</td>
-  <td class="col-detail"><span class="">1.4x</span></td>
-  <td class="col-detail">0.79</td>
-  <td class="col-detail"><span class="up">7.2%</span></td>
-</tr><tr data-jp="1" data-sector="Industrials" data-cap="mid">
-  <td style="color:var(--text-sub);font-weight:800">#12</td>
-  <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/1926.T" target="_blank" rel="noopener"><strong>1926</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">ライト工業</td>
-  <td><span class="dept-score-num score-high">100</span> <span class="score-delta dn" style="font-size:.65rem">-7</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">56</td>
-  <td>19.1</td><td>1.91</td><td>13.9%</td><td>5.25%</td>
-  <td><span class="up">+2.9%</span></td>
-  <td><span class="dn">-0.8%</span></td>
-  <td class="col-detail"><span class="">1.1x</span></td>
-  <td class="col-detail">0.31</td>
-  <td class="col-detail"><span class="up">5.7%</span></td>
-</tr><tr data-jp="1" data-sector="Financial Services" data-cap="small">
-  <td style="color:var(--text-sub);font-weight:800">#13</td>
-  <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/6196.T" target="_blank" rel="noopener"><strong>6196</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">ストライクグループ</td>
-  <td><span class="dept-score-num score-high">100</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">55</td>
-  <td>14.8</td><td>—</td><td>25.2%</td><td>14.55%</td>
-  <td><span class="dn">-4.7%</span></td>
-  <td><span class="up">+25.3%</span></td>
   <td class="col-detail"><span class="">0.7x</span></td>
-  <td class="col-detail">0.40</td>
-  <td class="col-detail"><span class="up">6.1%</span></td>
-</tr><tr data-jp="1" data-sector="Industrials" data-cap="small">
-  <td style="color:var(--text-sub);font-weight:800">#14</td>
-  <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/6070.T" target="_blank" rel="noopener"><strong>6070</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">キャリアリンク</td>
-  <td><span class="dept-score-num score-high">100</span> <span class="score-delta up" style="font-size:.65rem">+4</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">53</td>
-  <td>9.8</td><td>1.57</td><td>16.9%</td><td>5.68%</td>
-  <td><span class="dn">-9.7%</span></td>
-  <td>—</td>
-  <td class="col-detail"><span class="">1.2x</span></td>
-  <td class="col-detail">0.49</td>
-  <td class="col-detail"><span class="up">8.7%</span></td>
-</tr><tr data-jp="1" data-sector="Industrials" data-cap="small">
-  <td style="color:var(--text-sub);font-weight:800">#15</td>
-  <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/6089.T" target="_blank" rel="noopener"><strong>6089</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">ウィルグループ</td>
-  <td><span class="dept-score-num score-high">100</span> <span class="score-delta up" style="font-size:.65rem">+4</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">53</td>
-  <td>9.9</td><td>1.13</td><td>11.7%</td><td>8.80%</td>
-  <td><span class="dn">-13.2%</span></td>
-  <td>—</td>
-  <td class="col-detail"><span class="">1.3x</span></td>
-  <td class="col-detail">0.26</td>
-  <td class="col-detail"><span class="up">26.7%</span></td>
-</tr><tr data-jp="1" data-sector="Consumer Cyclical" data-cap="mid">
-  <td style="color:var(--text-sub);font-weight:800">#16</td>
-  <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/8130.T" target="_blank" rel="noopener"><strong>8130</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">サンゲツ</td>
-  <td><span class="dept-score-num score-high">100</span> <span class="score-delta up" style="font-size:.65rem">+1</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">51</td>
-  <td>11.3</td><td>1.37</td><td>12.3%</td><td>5.49%</td>
-  <td><span class="dn">-6.2%</span></td>
-  <td><span class="up">+20.4%</span></td>
-  <td class="col-detail"><span class="">1.2x</span></td>
-  <td class="col-detail">0.36</td>
-  <td class="col-detail"><span class="up">5.2%</span></td>
-</tr><tr data-jp="1" data-sector="Communication Services" data-cap="small">
-  <td style="color:var(--text-sub);font-weight:800">#17</td>
-  <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/6535.T" target="_blank" rel="noopener"><strong>6535</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">アイモバイル</td>
-  <td><span class="dept-score-num score-high">100</span> <span class="score-delta dn" style="font-size:.65rem">-7</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">47</td>
-  <td>11.0</td><td>1.59</td><td>14.4%</td><td>5.70%</td>
-  <td><span class="dn">-10.4%</span></td>
-  <td>—</td>
-  <td class="col-detail"><span class="up">2.2x</span></td>
-  <td class="col-detail">0.38</td>
-  <td class="col-detail"><span class="up">13.8%</span></td>
-</tr><tr data-jp="1" data-sector="Technology" data-cap="small">
-  <td style="color:var(--text-sub);font-weight:800">#18</td>
-  <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/3817.T" target="_blank" rel="noopener"><strong>3817</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">ＳＲＡホールディングス</td>
-  <td><span class="dept-score-num score-high">100</span> <span class="score-delta up" style="font-size:.65rem">+3</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">46</td>
-  <td>10.3</td><td>1.72</td><td>17.6%</td><td>5.26%</td>
-  <td><span class="up">+1.0%</span></td>
-  <td>—</td>
-  <td class="col-detail"><span class="">1.0x</span></td>
-  <td class="col-detail">0.25</td>
-  <td class="col-detail"><span class="up">10.6%</span></td>
-</tr><tr data-jp="1" data-sector="Industrials" data-cap="small">
-  <td style="color:var(--text-sub);font-weight:800">#19</td>
-  <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/1870.T" target="_blank" rel="noopener"><strong>1870</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">矢作建設工業</td>
-  <td><span class="dept-score-num score-high">100</span> <span class="score-delta dn" style="font-size:.65rem">-17</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">45</td>
-  <td>9.2</td><td>1.03</td><td>11.7%</td><td>5.54%</td>
-  <td><span class="dn">-17.5%</span></td>
-  <td>—</td>
-  <td class="col-detail"><span class="">1.0x</span></td>
-  <td class="col-detail">0.39</td>
-  <td class="col-detail"><span class="up">11.1%</span></td>
-</tr><tr data-jp="1" data-sector="Industrials" data-cap="mid">
-  <td style="color:var(--text-sub);font-weight:800">#20</td>
-  <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/6379.T" target="_blank" rel="noopener"><strong>6379</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">レイズネクスト</td>
-  <td><span class="dept-score-num score-high">100</span> <span class="score-delta dn" style="font-size:.65rem">-4</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">45</td>
-  <td>11.2</td><td>1.28</td><td>12.1%</td><td>5.42%</td>
-  <td><span class="dn">-5.4%</span></td>
-  <td>—</td>
-  <td class="col-detail"><span class="">1.2x</span></td>
   <td class="col-detail">0.47</td>
-  <td class="col-detail"><span class="up">6.8%</span></td>
+  <td class="col-detail"><span class="up">11.8%</span></td>
 </tr><tr data-jp="1" data-sector="Technology" data-cap="small">
-  <td style="color:var(--text-sub);font-weight:800">#21</td>
+  <td style="color:var(--text-sub);font-weight:800">#4</td>
   <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/3835.T" target="_blank" rel="noopener"><strong>3835</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">ｅＢＡＳＥ</td>
-  <td><span class="dept-score-num score-high">100</span> <span class="score-delta dn" style="font-size:.65rem">-5</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">38</td>
-  <td>17.1</td><td>2.36</td><td>13.9%</td><td>6.97%</td>
-  <td><span class="dn">-3.7%</span></td>
+  <td><a href="https://finance.yahoo.co.jp/quote/2335.T" target="_blank" rel="noopener"><strong>2335</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">キューブシステム</td>
+  <td><span class="dept-score-num score-high">94</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">73</td>
+  <td>9.7</td><td>1.33</td><td>14.0%</td><td>4.80%</td>
+  <td><span class="dn">-2.0%</span></td>
   <td>—</td>
-  <td class="col-detail"><span class="">0.6x</span></td>
-  <td class="col-detail">0.41</td>
-  <td class="col-detail"><span class="up">5.2%</span></td>
+  <td class="col-detail"><span class="up">1.5x</span></td>
+  <td class="col-detail">0.51</td>
+  <td class="col-detail"><span class="up">5.0%</span></td>
+</tr><tr data-jp="1" data-sector="Technology" data-cap="mid">
+  <td style="color:var(--text-sub);font-weight:800">#5</td>
+  <td>🇯🇵</td>
+  <td><a href="https://finance.yahoo.co.jp/quote/9715.T" target="_blank" rel="noopener"><strong>9715</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">トランス・コスモス</td>
+  <td><span class="dept-score-num score-high">94</span> <span class="score-delta dn" style="font-size:.65rem">-6</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">65</td>
+  <td>11.8</td><td>1.12</td><td>10.4%</td><td>7.53%</td>
+  <td><span class="dn">-1.5%</span></td>
+  <td><span class="up">+10.8%</span></td>
+  <td class="col-detail"><span class="">0.9x</span></td>
+  <td class="col-detail">0.17</td>
+  <td class="col-detail"><span class="up">8.9%</span></td>
 </tr><tr data-jp="1" data-sector="Industrials" data-cap="small">
-  <td style="color:var(--text-sub);font-weight:800">#22</td>
+  <td style="color:var(--text-sub);font-weight:800">#6</td>
   <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/1852.T" target="_blank" rel="noopener"><strong>1852</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">淺沼組</td>
-  <td><span class="dept-score-num score-high">100</span> <span class="score-delta up" style="font-size:.65rem">+2</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">37</td>
-  <td>12.1</td><td>1.26</td><td>10.8%</td><td>7.21%</td>
-  <td><span class="dn">-18.3%</span></td>
-  <td>—</td>
-  <td class="col-detail"><span class="">1.2x</span></td>
-  <td class="col-detail">0.23</td>
-  <td class="col-detail"><span class="up">27.8%</span></td>
-</tr><tr data-jp="1" data-sector="Technology" data-cap="small">
-  <td style="color:var(--text-sub);font-weight:800">#23</td>
-  <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/9928.T" target="_blank" rel="noopener"><strong>9928</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">ミロク情報サービス</td>
-  <td><span class="dept-score-num score-high">100</span> <span class="score-delta up" style="font-size:.65rem">+15</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">68</td>
-  <td>9.8</td><td>1.56</td><td>16.7%</td><td>7.53%</td>
-  <td><span class="dn">-1.8%</span></td>
+  <td><a href="https://finance.yahoo.co.jp/quote/8103.T" target="_blank" rel="noopener"><strong>8103</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">明和産業</td>
+  <td><span class="dept-score-num score-high">92</span> <span class="score-delta up" style="font-size:.65rem">+15</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">77</td>
+  <td>10.5</td><td>0.85</td><td>8.6%</td><td>5.35%</td>
+  <td><span class="up">+13.6%</span></td>
   <td>—</td>
   <td class="col-detail"><span class="">0.8x</span></td>
-  <td class="col-detail">0.49</td>
-  <td class="col-detail"><span class="up">3.0%</span></td>
+  <td class="col-detail">-0.03</td>
+  <td class="col-detail"><span class="up">9.8%</span></td>
 </tr><tr data-jp="1" data-sector="Industrials" data-cap="small">
-  <td style="color:var(--text-sub);font-weight:800">#24</td>
+  <td style="color:var(--text-sub);font-weight:800">#7</td>
   <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/4318.T" target="_blank" rel="noopener"><strong>4318</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">クイック</td>
-  <td><span class="dept-score-num score-high">99</span> <span class="score-delta dn" style="font-size:.65rem">-2</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">63</td>
-  <td>9.9</td><td>2.13</td><td>22.4%</td><td>5.18%</td>
-  <td><span class="dn">-14.9%</span></td>
+  <td><a href="https://finance.yahoo.co.jp/quote/9304.T" target="_blank" rel="noopener"><strong>9304</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">澁澤倉庫</td>
+  <td><span class="dept-score-num score-high">92</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">52</td>
+  <td>12.5</td><td>1.16</td><td>9.6%</td><td>5.03%</td>
+  <td><span class="up">+8.8%</span></td>
   <td>—</td>
-  <td class="col-detail"><span class="">0.7x</span></td>
-  <td class="col-detail">0.45</td>
-  <td class="col-detail"><span class="up">4.4%</span></td>
-</tr><tr data-jp="1" data-sector="Real Estate" data-cap="small">
-  <td style="color:var(--text-sub);font-weight:800">#25</td>
-  <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/3245.T" target="_blank" rel="noopener"><strong>3245</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">ディア・ライフ</td>
-  <td><span class="dept-score-num score-high">97</span> <span class="score-delta dn" style="font-size:.65rem">-2</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">32</td>
-  <td>10.1</td><td>1.51</td><td>14.7%</td><td>6.56%</td>
-  <td><span class="dn">-6.9%</span></td>
-  <td>—</td>
-  <td class="col-detail"><span class="">1.1x</span></td>
-  <td class="col-detail">0.57</td>
-  <td class="col-detail"><span class="up">3.6%</span></td>
-</tr><tr data-jp="1" data-sector="Industrials" data-cap="small">
-  <td style="color:var(--text-sub);font-weight:800">#26</td>
-  <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/9743.T" target="_blank" rel="noopener"><strong>9743</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">丹青社</td>
-  <td><span class="dept-score-num score-high">97</span> <span class="score-delta dn" style="font-size:.65rem">-17</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">40</td>
-  <td>10.5</td><td>1.68</td><td>16.9%</td><td>5.40%</td>
-  <td><span class="dn">-6.9%</span></td>
-  <td>—</td>
-  <td class="col-detail"><span class="">1.5x</span></td>
-  <td class="col-detail">0.14</td>
-  <td class="col-detail"><span class="up">4.3%</span></td>
-</tr><tr data-jp="1" data-sector="Technology" data-cap="small">
-  <td style="color:var(--text-sub);font-weight:800">#27</td>
-  <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/3925.T" target="_blank" rel="noopener"><strong>3925</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">ダブルスタンダード</td>
-  <td><span class="dept-score-num score-high">97</span> <span class="score-delta up" style="font-size:.65rem">+1</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">33</td>
-  <td>14.5</td><td>2.40</td><td>17.0%</td><td>5.91%</td>
-  <td><span class="dn">-13.7%</span></td>
-  <td>—</td>
-  <td class="col-detail"><span class="">1.5x</span></td>
+  <td class="col-detail"><span class="">0.8x</span></td>
   <td class="col-detail">0.41</td>
-  <td class="col-detail"><span class="up">4.1%</span></td>
-</tr><tr data-jp="1" data-sector="Industrials" data-cap="small">
-  <td style="color:var(--text-sub);font-weight:800">#28</td>
-  <td>🇯🇵</td>
-  <td><a href="https://finance.yahoo.co.jp/quote/8070.T" target="_blank" rel="noopener"><strong>8070</strong></a></td>
-  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">東京産業</td>
-  <td><span class="dept-score-num score-high">97</span> <span class="score-delta up" style="font-size:.65rem">+1</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">50</td>
-  <td>8.1</td><td>0.80</td><td>10.9%</td><td>5.15%</td>
-  <td><span class="dn">-12.6%</span></td>
-  <td>—</td>
-  <td class="col-detail"><span class="">0.9x</span></td>
-  <td class="col-detail">0.29</td>
-  <td class="col-detail"><span class="">2.4%</span></td>
+  <td class="col-detail"><span class="up">5.1%</span></td>
 </tr><tr data-jp="1" data-sector="Technology" data-cap="small">
-  <td style="color:var(--text-sub);font-weight:800">#29</td>
+  <td style="color:var(--text-sub);font-weight:800">#8</td>
   <td>🇯🇵</td>
   <td><a href="https://finance.yahoo.co.jp/quote/9889.T" target="_blank" rel="noopener"><strong>9889</strong></a></td>
   <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">ＪＢＣＣホールディングス</td>
-  <td><span class="dept-score-num score-high">96</span> <span class="score-delta dn" style="font-size:.65rem">-3</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">77</td>
+  <td><span class="dept-score-num score-high">91</span> <span class="score-delta dn" style="font-size:.65rem">-4</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">76</td>
   <td>14.4</td><td>—</td><td>21.8%</td><td>4.01%</td>
   <td><span class="up">+2.0%</span></td>
   <td>—</td>
@@ -431,18 +158,291 @@
   <td class="col-detail">0.36</td>
   <td class="col-detail"><span class="up">7.4%</span></td>
 </tr><tr data-jp="1" data-sector="Technology" data-cap="small">
-  <td style="color:var(--text-sub);font-weight:800">#30</td>
+  <td style="color:var(--text-sub);font-weight:800">#9</td>
+  <td>🇯🇵</td>
+  <td><a href="https://finance.yahoo.co.jp/quote/4674.T" target="_blank" rel="noopener"><strong>4674</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">クレスコ</td>
+  <td><span class="dept-score-num score-high">91</span> <span class="score-delta up" style="font-size:.65rem">+19</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">75</td>
+  <td>11.9</td><td>1.86</td><td>16.4%</td><td>4.54%</td>
+  <td><span class="up">+11.8%</span></td>
+  <td>—</td>
+  <td class="col-detail"><span class="">0.6x</span></td>
+  <td class="col-detail">0.92</td>
+  <td class="col-detail"><span class="up">4.7%</span></td>
+</tr><tr data-jp="1" data-sector="Industrials" data-cap="small">
+  <td style="color:var(--text-sub);font-weight:800">#10</td>
+  <td>🇯🇵</td>
+  <td><a href="https://finance.yahoo.co.jp/quote/2410.T" target="_blank" rel="noopener"><strong>2410</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">キャリアデザインセンター</td>
+  <td><span class="dept-score-num score-high">91</span> <span class="score-delta dn" style="font-size:.65rem">-19</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">63</td>
+  <td>11.6</td><td>2.88</td><td>26.8%</td><td>10.26%</td>
+  <td><span class="up">+4.8%</span></td>
+  <td>—</td>
+  <td class="col-detail"><span class="">0.9x</span></td>
+  <td class="col-detail">0.34</td>
+  <td class="col-detail"><span class="up">8.7%</span></td>
+</tr><tr data-jp="1" data-sector="Real Estate" data-cap="small">
+  <td style="color:var(--text-sub);font-weight:800">#11</td>
+  <td>🇯🇵</td>
+  <td><a href="https://finance.yahoo.co.jp/quote/1814.T" target="_blank" rel="noopener"><strong>1814</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">大末建設</td>
+  <td><span class="dept-score-num score-high">90</span> <span class="score-delta dn" style="font-size:.65rem">-3</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">71</td>
+  <td>8.6</td><td>1.29</td><td>15.8%</td><td>5.90%</td>
+  <td><span class="dn">-10.6%</span></td>
+  <td>—</td>
+  <td class="col-detail"><span class="">0.9x</span></td>
+  <td class="col-detail">0.45</td>
+  <td class="col-detail"><span class="up">25.4%</span></td>
+</tr><tr data-jp="1" data-sector="Consumer Cyclical" data-cap="small">
+  <td style="color:var(--text-sub);font-weight:800">#12</td>
+  <td>🇯🇵</td>
+  <td><a href="https://finance.yahoo.co.jp/quote/7482.T" target="_blank" rel="noopener"><strong>7482</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">シモジマ</td>
+  <td><span class="dept-score-num score-high">90</span> <span class="score-delta up" style="font-size:.65rem">+16</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">71</td>
+  <td>10.8</td><td>0.80</td><td>7.6%</td><td>4.76%</td>
+  <td><span class="dn">-3.6%</span></td>
+  <td>—</td>
+  <td class="col-detail"><span class="">1.2x</span></td>
+  <td class="col-detail">0.16</td>
+  <td class="col-detail"><span class="up">8.4%</span></td>
+</tr><tr data-jp="1" data-sector="Industrials" data-cap="small">
+  <td style="color:var(--text-sub);font-weight:800">#13</td>
+  <td>🇯🇵</td>
+  <td><a href="https://finance.yahoo.co.jp/quote/5011.T" target="_blank" rel="noopener"><strong>5011</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">ニチレキグループ</td>
+  <td><span class="dept-score-num score-high">90</span> <span class="score-delta dn" style="font-size:.65rem">-2</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">64</td>
+  <td>13.1</td><td>0.70</td><td>5.5%</td><td>4.60%</td>
+  <td><span class="dn">-5.6%</span></td>
+  <td>—</td>
+  <td class="col-detail"><span class="">0.8x</span></td>
+  <td class="col-detail">0.42</td>
+  <td class="col-detail"><span class="up">14.1%</span></td>
+</tr><tr data-jp="1" data-sector="Industrials" data-cap="mid">
+  <td style="color:var(--text-sub);font-weight:800">#14</td>
+  <td>🇯🇵</td>
+  <td><a href="https://finance.yahoo.co.jp/quote/7994.T" target="_blank" rel="noopener"><strong>7994</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">オカムラ</td>
+  <td><span class="dept-score-num score-high">90</span> <span class="score-delta dn" style="font-size:.65rem">-3</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">63</td>
+  <td>9.3</td><td>1.02</td><td>11.5%</td><td>4.76%</td>
+  <td><span class="dn">-12.9%</span></td>
+  <td><span class="up">+32.1%</span></td>
+  <td class="col-detail"><span class="">1.4x</span></td>
+  <td class="col-detail">0.14</td>
+  <td class="col-detail"><span class="up">6.4%</span></td>
+</tr><tr data-jp="1" data-sector="Technology" data-cap="small">
+  <td style="color:var(--text-sub);font-weight:800">#15</td>
   <td>🇯🇵</td>
   <td><a href="https://finance.yahoo.co.jp/quote/4432.T" target="_blank" rel="noopener"><strong>4432</strong></a></td>
   <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">ウイングアーク１ｓｔ</td>
-  <td><span class="dept-score-num score-high">95</span> <span class="score-delta dn" style="font-size:.65rem">-3</span> <span class="badge badge-buy">BUY</span></td>
-  <td style="color:var(--text-sub)">66</td>
+  <td><span class="dept-score-num score-high">89</span> <span class="score-delta up" style="font-size:.65rem">+11</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">80</td>
   <td>13.9</td><td>1.91</td><td>14.6%</td><td>4.17%</td>
   <td><span class="dn">-4.1%</span></td>
   <td><span class="up">+56.6%</span></td>
   <td class="col-detail"><span class="">1.3x</span></td>
   <td class="col-detail">0.58</td>
   <td class="col-detail"><span class="up">6.3%</span></td>
+</tr><tr data-jp="1" data-sector="Healthcare" data-cap="small">
+  <td style="color:var(--text-sub);font-weight:800">#16</td>
+  <td>🇯🇵</td>
+  <td><a href="https://finance.yahoo.co.jp/quote/7575.T" target="_blank" rel="noopener"><strong>7575</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">日本ライフライン</td>
+  <td><span class="dept-score-num score-high">89</span> <span class="score-delta up" style="font-size:.65rem">+18</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">77</td>
+  <td>9.6</td><td>1.36</td><td>14.9%</td><td>4.39%</td>
+  <td><span class="dn">-9.4%</span></td>
+  <td><span class="up">+21.1%</span></td>
+  <td class="col-detail"><span class="">0.8x</span></td>
+  <td class="col-detail">0.17</td>
+  <td class="col-detail"><span class="up">5.0%</span></td>
+</tr><tr data-jp="1" data-sector="Industrials" data-cap="small">
+  <td style="color:var(--text-sub);font-weight:800">#17</td>
+  <td>🇯🇵</td>
+  <td><a href="https://finance.yahoo.co.jp/quote/4318.T" target="_blank" rel="noopener"><strong>4318</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">クイック</td>
+  <td><span class="dept-score-num score-high">89</span> <span class="score-delta up" style="font-size:.65rem">+9</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">74</td>
+  <td>9.9</td><td>2.13</td><td>22.4%</td><td>5.18%</td>
+  <td><span class="dn">-14.9%</span></td>
+  <td>—</td>
+  <td class="col-detail"><span class="">0.7x</span></td>
+  <td class="col-detail">0.45</td>
+  <td class="col-detail"><span class="up">4.4%</span></td>
+</tr><tr data-jp="1" data-sector="Energy" data-cap="small">
+  <td style="color:var(--text-sub);font-weight:800">#18</td>
+  <td>🇯🇵</td>
+  <td><a href="https://finance.yahoo.co.jp/quote/1518.T" target="_blank" rel="noopener"><strong>1518</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">三井松島ホールディングス</td>
+  <td><span class="dept-score-num score-high">89</span> <span class="score-delta dn" style="font-size:.65rem">-5</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">63</td>
+  <td>9.5</td><td>0.99</td><td>11.1%</td><td>5.24%</td>
+  <td><span class="up">+1.8%</span></td>
+  <td>—</td>
+  <td class="col-detail"><span class="">0.8x</span></td>
+  <td class="col-detail">0.88</td>
+  <td class="col-detail"><span class="up">3.8%</span></td>
+</tr><tr data-jp="1" data-sector="Technology" data-cap="small">
+  <td style="color:var(--text-sub);font-weight:800">#19</td>
+  <td>🇯🇵</td>
+  <td><a href="https://finance.yahoo.co.jp/quote/3817.T" target="_blank" rel="noopener"><strong>3817</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">ＳＲＡホールディングス</td>
+  <td><span class="dept-score-num score-high">89</span> <span class="score-delta up" style="font-size:.65rem">+16</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">59</td>
+  <td>10.3</td><td>1.72</td><td>17.6%</td><td>5.26%</td>
+  <td><span class="up">+1.0%</span></td>
+  <td>—</td>
+  <td class="col-detail"><span class="">1.0x</span></td>
+  <td class="col-detail">0.25</td>
+  <td class="col-detail"><span class="up">10.6%</span></td>
+</tr><tr data-jp="1" data-sector="Technology" data-cap="small">
+  <td style="color:var(--text-sub);font-weight:800">#20</td>
+  <td>🇯🇵</td>
+  <td><a href="https://finance.yahoo.co.jp/quote/3393.T" target="_blank" rel="noopener"><strong>3393</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">スターティアホールディングス</td>
+  <td><span class="dept-score-num score-high">88</span> <span class="score-delta dn" style="font-size:.65rem">-7</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">66</td>
+  <td>11.8</td><td>—</td><td>29.2%</td><td>10.65%</td>
+  <td><span class="up">+5.7%</span></td>
+  <td>—</td>
+  <td class="col-detail"><span class="">0.9x</span></td>
+  <td class="col-detail">0.88</td>
+  <td class="col-detail"><span class="up">9.1%</span></td>
+</tr><tr data-jp="1" data-sector="Basic Materials" data-cap="small">
+  <td style="color:var(--text-sub);font-weight:800">#21</td>
+  <td>🇯🇵</td>
+  <td><a href="https://finance.yahoo.co.jp/quote/8158.T" target="_blank" rel="noopener"><strong>8158</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">ソーダニッカ</td>
+  <td><span class="dept-score-num score-high">87</span> <span class="score-delta dn" style="font-size:.65rem">-1</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">68</td>
+  <td>10.3</td><td>0.72</td><td>7.5%</td><td>4.12%</td>
+  <td><span class="up">+4.3%</span></td>
+  <td>—</td>
+  <td class="col-detail"><span class="">0.8x</span></td>
+  <td class="col-detail">0.33</td>
+  <td class="col-detail"><span class="up">5.5%</span></td>
+</tr><tr data-jp="1" data-sector="Industrials" data-cap="mid">
+  <td style="color:var(--text-sub);font-weight:800">#22</td>
+  <td>🇯🇵</td>
+  <td><a href="https://finance.yahoo.co.jp/quote/8876.T" target="_blank" rel="noopener"><strong>8876</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">リログループ</td>
+  <td><span class="dept-score-num score-high">87</span> <span class="score-delta up" style="font-size:.65rem">+5</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">62</td>
+  <td>13.8</td><td>—</td><td>26.8%</td><td>4.18%</td>
+  <td><span class="dn">-8.6%</span></td>
+  <td><span class="up">+16.1%</span></td>
+  <td class="col-detail"><span class="">1.0x</span></td>
+  <td class="col-detail">0.36</td>
+  <td class="col-detail"><span class="up">9.5%</span></td>
+</tr><tr data-jp="1" data-sector="Industrials" data-cap="mid">
+  <td style="color:var(--text-sub);font-weight:800">#23</td>
+  <td>🇯🇵</td>
+  <td><a href="https://finance.yahoo.co.jp/quote/6183.T" target="_blank" rel="noopener"><strong>6183</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">ベルシステム２４ホールディングス</td>
+  <td><span class="dept-score-num score-high">87</span> <span class="score-delta up" style="font-size:.65rem">+15</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">59</td>
+  <td>12.9</td><td>1.43</td><td>11.5%</td><td>4.21%</td>
+  <td><span class="dn">-7.1%</span></td>
+  <td><span class="up">+16.3%</span></td>
+  <td class="col-detail"><span class="">0.8x</span></td>
+  <td class="col-detail">0.22</td>
+  <td class="col-detail"><span class="up">14.9%</span></td>
+</tr><tr data-jp="1" data-sector="Industrials" data-cap="small">
+  <td style="color:var(--text-sub);font-weight:800">#24</td>
+  <td>🇯🇵</td>
+  <td><a href="https://finance.yahoo.co.jp/quote/1975.T" target="_blank" rel="noopener"><strong>1975</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">朝日工業社</td>
+  <td><span class="dept-score-num score-high">86</span> <span class="score-delta dn" style="font-size:.65rem">-4</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">73</td>
+  <td>10.8</td><td>1.96</td><td>19.9%</td><td>3.74%</td>
+  <td><span class="up">+0.8%</span></td>
+  <td>—</td>
+  <td class="col-detail"><span class="">0.8x</span></td>
+  <td class="col-detail">1.03</td>
+  <td class="col-detail"><span class="up">6.9%</span></td>
+</tr><tr data-jp="1" data-sector="Technology" data-cap="small">
+  <td style="color:var(--text-sub);font-weight:800">#25</td>
+  <td>🇯🇵</td>
+  <td><a href="https://finance.yahoo.co.jp/quote/9739.T" target="_blank" rel="noopener"><strong>9739</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">ＮＳＷ</td>
+  <td><span class="dept-score-num score-high">86</span> <span class="score-delta dn" style="font-size:.65rem">-4</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">65</td>
+  <td>10.3</td><td>1.01</td><td>10.1%</td><td>5.07%</td>
+  <td><span class="up">+3.1%</span></td>
+  <td>—</td>
+  <td class="col-detail"><span class="">1.4x</span></td>
+  <td class="col-detail">0.17</td>
+  <td class="col-detail"><span class="up">4.6%</span></td>
+</tr><tr data-jp="1" data-sector="Consumer Cyclical" data-cap="small">
+  <td style="color:var(--text-sub);font-weight:800">#26</td>
+  <td>🇯🇵</td>
+  <td><a href="https://finance.yahoo.co.jp/quote/8101.T" target="_blank" rel="noopener"><strong>8101</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">ＧＳＩクレオス</td>
+  <td><span class="dept-score-num score-high">86</span> <span class="score-delta dn" style="font-size:.65rem">-12</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">60</td>
+  <td>10.9</td><td>0.86</td><td>8.2%</td><td>4.69%</td>
+  <td><span class="dn">-7.8%</span></td>
+  <td>—</td>
+  <td class="col-detail"><span class="up">1.6x</span></td>
+  <td class="col-detail">0.31</td>
+  <td class="col-detail"><span class="up">5.8%</span></td>
+</tr><tr data-jp="1" data-sector="Technology" data-cap="small">
+  <td style="color:var(--text-sub);font-weight:800">#27</td>
+  <td>🇯🇵</td>
+  <td><a href="https://finance.yahoo.co.jp/quote/9658.T" target="_blank" rel="noopener"><strong>9658</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">ビジネスブレイン太田昭和</td>
+  <td><span class="dept-score-num score-high">86</span> <span class="score-delta dn" style="font-size:.65rem">-11</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">59</td>
+  <td>11.2</td><td>1.13</td><td>10.0%</td><td>4.56%</td>
+  <td><span class="up">+11.7%</span></td>
+  <td>—</td>
+  <td class="col-detail"><span class="">1.3x</span></td>
+  <td class="col-detail">0.62</td>
+  <td class="col-detail"><span class="up">11.1%</span></td>
+</tr><tr data-jp="1" data-sector="Industrials" data-cap="small">
+  <td style="color:var(--text-sub);font-weight:800">#28</td>
+  <td>🇯🇵</td>
+  <td><a href="https://finance.yahoo.co.jp/quote/9332.T" target="_blank" rel="noopener"><strong>9332</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">ＮＩＳＳＯホールディングス</td>
+  <td><span class="dept-score-num score-high">85</span> <span class="score-delta dn" style="font-size:.65rem">-6</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">73</td>
+  <td>10.0</td><td>1.03</td><td>10.9%</td><td>4.44%</td>
+  <td><span class="dn">-6.2%</span></td>
+  <td>—</td>
+  <td class="col-detail"><span class="">0.9x</span></td>
+  <td class="col-detail">0.40</td>
+  <td class="col-detail"><span class="up">5.6%</span></td>
+</tr><tr data-jp="1" data-sector="Consumer Defensive" data-cap="small">
+  <td style="color:var(--text-sub);font-weight:800">#29</td>
+  <td>🇯🇵</td>
+  <td><a href="https://finance.yahoo.co.jp/quote/4668.T" target="_blank" rel="noopener"><strong>4668</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">明光ネットワークジャパン</td>
+  <td><span class="dept-score-num score-high">85</span> <span class="score-delta up" style="font-size:.65rem">+2</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">62</td>
+  <td>21.2</td><td>1.33</td><td>13.5%</td><td>4.17%</td>
+  <td><span class="dn">-2.5%</span></td>
+  <td>—</td>
+  <td class="col-detail"><span class="">1.1x</span></td>
+  <td class="col-detail">—</td>
+  <td class="col-detail"><span class="up">5.0%</span></td>
+</tr><tr data-jp="1" data-sector="Industrials" data-cap="small">
+  <td style="color:var(--text-sub);font-weight:800">#30</td>
+  <td>🇯🇵</td>
+  <td><a href="https://finance.yahoo.co.jp/quote/1870.T" target="_blank" rel="noopener"><strong>1870</strong></a></td>
+  <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">矢作建設工業</td>
+  <td><span class="dept-score-num score-high">85</span> <span class="score-delta dn" style="font-size:.65rem">-18</span> <span class="badge badge-buy">BUY</span></td>
+  <td style="color:var(--text-sub)">44</td>
+  <td>9.2</td><td>1.03</td><td>11.7%</td><td>5.54%</td>
+  <td><span class="dn">-17.5%</span></td>
+  <td>—</td>
+  <td class="col-detail"><span class="">1.0x</span></td>
+  <td class="col-detail">0.39</td>
+  <td class="col-detail"><span class="up">11.1%</span></td>
 </tr></tbody>
 </table>
 </div>
@@ -483,7 +483,7 @@ function deptToggleDetail(){
 </main>
 <footer>
   <p>© HG Analytics — AIによる自動分析・スクリーニング</p>
-  <p style="margin-top:.2rem;font-size:.7rem;">最終更新: 2026年6月2日 16:41 JST</p>
+  <p style="margin-top:.2rem;font-size:.7rem;">最終更新: 2026年6月2日 22:46 JST</p>
   <p style="margin-top:.3rem;">投資の最終判断はご自身でお願いします（金融商品取引法準拠）。当サイトの情報は投資勧誘を目的としません。</p>
   <p style="margin-top:.5rem;font-size:.7rem;">
     <a href="/privacy/" style="color:var(--text-sub);">プライバシーポリシー・運営者情報</a>
